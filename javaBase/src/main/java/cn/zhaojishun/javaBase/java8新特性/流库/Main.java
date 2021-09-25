@@ -1,5 +1,7 @@
 package cn.zhaojishun.javaBase.java8新特性.流库;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -38,6 +40,9 @@ public class Main {
                 .sorted(Comparator.comparingInt(User::getAge))
                 .collect(Collectors.groupingBy(User::getType));
         System.out.println(collect);
+
+        //按时间分组
+        /*Map<String, List<File>> collect = Arrays.stream(files1).collect(Collectors.groupingBy(item -> new SimpleDateFormat("yyyy-MM-dd").format(new Date(item.lastModified()))));*/
 
 
         //使用流计算

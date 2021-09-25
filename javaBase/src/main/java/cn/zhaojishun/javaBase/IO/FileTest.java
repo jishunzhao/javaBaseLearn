@@ -17,10 +17,10 @@ public class FileTest {
         /*构造File对象时，既可以传入绝对路径，也可以传入相对路径。绝对路径是以根目录开头的完整路径，例如：*/
         /*注意Windows平台使用\作为路径分隔符，在Java字符串中需要用\\表示一个\。Linux平台使用/作为路径分隔符：*/
         /*真实环境中建议写绝对路径*/
-        String windowFilePath = "F:\\project\\javaBaseLearn\\javaBase\\src\\main\\java\\cn\\zhaojishun\\javaBase\\IO\\text";
-        String linuxFilePath = "cn/zhaojishun/javaBase/IO/text";
+        String windowFilePath = "F:\\testimg\\2020\\9\\10\\5601\\7344266.jpg";
+        //String linuxFilePath = "cn/zhaojishun/javaBase/IO/text";
         File f = new File(windowFilePath);
-
+        System.out.println(f.getParent());
         /*路径测试*/
         System.out.println(f.getPath());
         System.out.println(f.getAbsolutePath());

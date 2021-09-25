@@ -12,10 +12,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Size s = Enum.valueOf(Size.class,"S");
-        System.out.println(s);
-        System.out.println(s == Size.S);
+        Size s = Enum.valueOf(Size.class,"SAMIL");
+
+        System.out.println(s.toString());
+
+        System.out.println(s == Size.SAMIL);
+
+        System.out.println(s.getAbbreviation());
+        //Size.values 返回包含全部枚举值的数组
         System.out.println(Arrays.toString(Size.values()));
+        //返回声明枚举常量的位置 ， 从0开始
+        System.out.println(Size.EXTRA_LARGE.ordinal());
     }
 
 }
