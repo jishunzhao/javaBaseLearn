@@ -3,7 +3,7 @@ import java.util.*;
 import java.lang.reflect.*;
 
 /**
- * 反射的常见应用
+ * 反射的常见应用 输入全类名输出类的全部信息
  *
  */
 public class ReflectionTest
@@ -83,6 +83,7 @@ public class ReflectionTest
 
         for (Method m : methods)
         {
+
             Class retType = m.getReturnType();
             String name = m.getName();
 

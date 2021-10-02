@@ -1,6 +1,7 @@
 package cn.zhaojishun.javaBase.基础.配置文件读取;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -13,20 +14,15 @@ import java.util.Properties;
  */
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println(readProperty("dbtype"));
+    public static void main(String[] args) throws IOException {
+        Properties properties = readProperty();
+        System.out.println(properties.getProperty("dbtype"));
     }
 
     //读取配置文件
-    private static String readProperty(String key) {
-        String drivers = null;
-        try {
-            Properties prop = new Properties();
-            prop.load(new FileInputStream(Thread.currentThread().getContextClassLoader().getResource("db.properties").getPath()));
-            drivers = prop.getProperty(key);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return drivers;
+    private static Properties readProperty() throws IOException {
+        Properties prop = new Properties();
+        prop.load(new FileInputStream(Thread.currentThread().getContextClassLoader().getResource("db.properties").getPath()));
+        return prop;
     }
 }

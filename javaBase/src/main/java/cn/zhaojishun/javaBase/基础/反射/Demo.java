@@ -27,13 +27,10 @@ public class Demo {
         String className = "cn.zhaojishun.javaBase.基础.反射.Dog";
         Class c2 = Class.forName(className);
 
-
-
-
         Object o = c2.newInstance();
 
         //getFields 方法将返回一个包含Field 对象的数组
-        Field[] field = Class.forName(className).getFields();
+        Field[] field = Class.forName(className).getDeclaredFields();
 
         System.out.println(field.length);
 

@@ -1,4 +1,4 @@
-package cn.zhaojishun.javaBase.线程;
+package cn.zhaojishun.javaBase.并发;
 
 /**
  * 线程测试

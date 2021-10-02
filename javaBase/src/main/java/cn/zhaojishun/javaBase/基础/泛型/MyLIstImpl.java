@@ -1,8 +1,7 @@
 package cn.zhaojishun.javaBase.基础.泛型;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * @program: javaBaseLearn
@@ -13,17 +12,17 @@ import java.util.List;
 public class MyLIstImpl<T> implements MyListInterface<T> {
     //泛型类
     List list;
+    HashMap map;
+    ArrayList li1;
 
     public MyLIstImpl() {
-        list = new ArrayList();
+        list = new ArrayList<>();
     }
 
     //泛型方法可以在方法参数的类型定义泛型，也可以在返回值时定义类型。
     @Override
     public void add(T ... t) {
-
         list.addAll(Arrays.asList(t));
-
     }
 
     @Override
@@ -32,5 +31,8 @@ public class MyLIstImpl<T> implements MyListInterface<T> {
     }
 
 
+    public static <Q extends Runnable , P extends Comparable & Serializable> List<String> create(Q a){
+        return new ArrayList<String>();
+    }
 
 }
