@@ -1,5 +1,5 @@
 ##设置排除的文件##
 .idea/
-*.iml
-target/
 log/
+target/
+*.iml
