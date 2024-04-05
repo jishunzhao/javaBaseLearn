@@ -5,7 +5,7 @@ import org.junit.Assert;
 public class Main {
 
     public static void main(String[] args) {
-        Integer x = -1;
+        Integer x = null;
         Assert.assertNotNull(x);
     }
 }

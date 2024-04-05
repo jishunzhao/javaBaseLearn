@@ -30,6 +30,10 @@ public class MyLIstImpl<T> implements MyListInterface<T> {
         return list;
     }
 
+    @Override
+    public <P> T getL(T t) {
+        return t;
+    }
 
     public static <Q extends Runnable , P extends Comparable & Serializable> List<String> create(Q a){
         return new ArrayList<String>();

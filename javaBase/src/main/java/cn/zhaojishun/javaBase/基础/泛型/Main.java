@@ -13,10 +13,11 @@ public class Main {
     public static void main(String[] args) {
 
 
-        MyListInterface<User> list = new MyLIstImpl<>();
-        initData(list);
+        MyListInterface<String> list = new MyLIstImpl<>();
+        String p = list.getL("list");
+       /* initData(list);
 
-        list.getList().forEach(System.out::println);
+        list.getList().forEach(System.out::println);*/
 
 
     }

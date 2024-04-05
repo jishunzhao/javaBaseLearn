@@ -54,11 +54,11 @@ public class SString {
     }
     
     /** 
-     * @Description: KPM 算法
+     * @Description: KMP 算法
      * @Param:  
      * @return:  
      * @Author: 
-     * @Date:   
+     * @Date: 2020-07-07
      */ 
     int indexKMP(SString t){
         int i = 1;

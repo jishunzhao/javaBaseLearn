@@ -47,13 +47,13 @@ public class Main {
 
         //使用流计算
         //Collection 接口的stream 方法可以将任何集合转换为一个流
-        /*userList.stream()
+        userList.stream()
                 .filter((u)->{return u.getId() % 2 != 0;})
                 .filter((u)->{return u.getAge() > 23;})
                 .map((u)->{return u.getName().toUpperCase();})
                 .sorted((uu1,uu2)->{return uu1.compareTo(uu2);})
                 .limit(1)
-                .forEach(System.out::print);*/
+                .forEach(System.out::print);
 
 
         //操作流的典型步骤

@@ -1,5 +1,6 @@
 package cn.zhaojishun.javaBase.基础.日期时间;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
@@ -49,6 +50,7 @@ public class Main {
         System.out.println(now.format(DateTimeFormatter.ISO_DATE));
         System.out.println(now.format(DateTimeFormatter.BASIC_ISO_DATE ));
         System.out.println(now.format(DateTimeFormatter.ofPattern(DATE_TIME)));
+        Instant now1 = Instant.now();
     }
 
 }

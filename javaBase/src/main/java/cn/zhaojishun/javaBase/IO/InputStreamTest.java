@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 
 /**
  * @program: javaBaseLearn
@@ -13,13 +14,13 @@ import java.io.InputStream;
  */
 public class InputStreamTest {
 
+    private static String ac;
 
     public static void main(String[] args) throws IOException {
 
+        readFile("F:\\project\\javaBaseLearn\\javaBase\\src\\main\\java\\cn\\zhaojishun\\javaBase\\IO\\text");
 
-        //readFile("F:\\project\\javaBaseLearn\\javaBase\\src\\main\\java\\cn\\zhaojishun\\javaBase\\IO\\text");
-
-        SecondReader("F:\\project\\javaBaseLearn\\javaBase\\src\\main\\java\\cn\\zhaojishun\\javaBase\\IO\\text");
+        //SecondReader("F:\\project\\javaBaseLearn\\javaBase\\src\\main\\java\\cn\\zhaojishun\\javaBase\\IO\\text");
     }
 
     /**
